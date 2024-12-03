@@ -38,6 +38,6 @@ The paper "Attention Is All You Need" by Vaswani et al., published in 2017, intr
 
 ## Visualization of Transformer Architecture
 
-Here is a simplified textual representation of the Transformer architecture:
+Here is a representation of the Transformer architecture:
 
 ![](transformer.png "Transformer")
