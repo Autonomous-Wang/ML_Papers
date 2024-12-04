@@ -11,8 +11,7 @@ The paper introduces a revolutionary neural network architecture known as the Tr
 $$\text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T}{\sqrt{d_k}} \right)V
 $$
 
-- Here, the scaling factor $$\frac{1}{\sqrt{d_k}}$$ normalizes the dot products to prevent large values.
-Here is a diagram of the dot product attention:
+- Here, the scaling factor $$\frac{1}{\sqrt{d_k}}$$ normalizes the dot products to prevent large values. Here is a diagram of the dot product attention:
  ![](dot_product.png "Attention_Dot_Product")
 
 ### Multi-Head Attention
