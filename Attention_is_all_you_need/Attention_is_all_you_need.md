@@ -12,7 +12,7 @@ $$\text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T}{\sqrt{d_k}} \rig
 $$
 
 - Here, the scaling factor $$\frac{1}{\sqrt{d_k}}$$ normalizes the dot products to prevent large values.
- Here is a diagram of the dot product attention:
+Here is a diagram of the dot product attention:
  ![](dot_product.png "Attention_Dot_Product")
 
 ### Multi-Head Attention
