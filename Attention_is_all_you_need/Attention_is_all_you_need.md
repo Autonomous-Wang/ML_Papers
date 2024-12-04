@@ -8,17 +8,21 @@ The paper introduces a revolutionary neural network architecture known as the Tr
 
 ### Attention Function
 - The attention function takes in three inputs: **query** ($Q$), **key** ($K$), and **value** ($V$). And the output is a weighted sum of the values, where the weights are computed based on dot product between the **query** and **key**. 
-$$\text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T}{\sqrt{d_k}} \right)V$$
+$$
+\text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T}{\sqrt{d_k}} \right)V
+$$
 
 - Here, the scaling factor $$\frac{1}{\sqrt{d_k}}$$ normalizes the dot products to prevent large values.
- Here is a diagram of the dot product attention: ![](dot_product.png "Attention_Dot_Product")
+ Here is a diagram of the dot product attention:
+ ![](dot_product.png "Attention_Dot_Product")
 
 ### Multi-Head Attention
 - To attend to information from different representation subspaces:
   - Transformer uses multi-head attention, which computes multiple attention scores (8 heads in the paper).
   - Each head computes attention scores independently, then concatenates and linearly projects to the original dimension.
 
-Here is a diagram of the multi-head attention: ![](multi_head.png "multihead")
+Here is a diagram of the multi-head attention:
+![](multi_head.png "multihead")
 
 ## Applications of Attention in the Transformer
 
