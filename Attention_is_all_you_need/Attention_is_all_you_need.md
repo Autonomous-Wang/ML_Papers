@@ -1,4 +1,4 @@
-# Paper Notes: "Attention Is All You Need"
+# Attention Is All You Need
 
 ## Introduction
 
@@ -8,8 +8,7 @@ The paper introduces a revolutionary neural network architecture known as the Tr
 
 ### Attention Function
 - The attention function takes in three inputs: **query** ($Q$), **key** ($K$), and **value** ($V$). And the output is a weighted sum of the values, where the weights are computed based on dot product between the **query** and **key**. 
-$$
-\text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T}{\sqrt{d_k}} \right)V$$
+$$\text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T}{\sqrt{d_k}} \right)V$$
 
 - Here, the scaling factor $$\frac{1}{\sqrt{d_k}}$$ normalizes the dot products to prevent large values.
  Here is a diagram of the dot product attention: ![](dot_product.png "Attention_Dot_Product")
